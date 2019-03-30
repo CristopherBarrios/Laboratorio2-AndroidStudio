@@ -5,7 +5,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        tools:ignore="ContentDescription">
 
     <ImageView
             android:layout_width="148dp"
@@ -13,23 +14,20 @@
             android:id="@+id/imageView" android:layout_marginEnd="133dp"
             android:layout_marginRight="133dp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="130dp"
-            android:layout_marginStart="130dp" android:layout_marginTop="274dp"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="45dp"
-            app:layout_constraintBottom_toTopOf="@+id/button"/>
+            android:layout_marginStart="130dp"
+            android:layout_marginBottom="45dp" app:layout_constraintBottom_toTopOf="@+id/button"/>
     <Button
-            android:text="Nuevo entreno"
             android:layout_width="134dp"
             android:layout_height="wrap_content"
             android:id="@+id/button"
             android:background="@color/colorPrimaryDark"
-            android:layout_marginBottom="48dp"
-            app:layout_constraintBottom_toTopOf="@+id/button2" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="138dp" android:layout_marginRight="138dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="139dp"
-            android:layout_marginStart="139dp" android:layout_marginTop="45dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+            android:layout_marginStart="139dp"
+            android:onClick="ventana" android:layout_marginBottom="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/button2" tools:text="Nuevo Entreno"/>
     <Button
-            android:text="Eliminar historial"
             android:layout_width="154dp"
             android:layout_height="wrap_content"
             android:id="@+id/button2"
@@ -37,6 +35,12 @@
             android:layout_marginEnd="127dp" android:layout_marginRight="127dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="131dp"
             android:layout_marginStart="131dp" android:layout_marginBottom="115dp"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent" android:onClick="ventana2" tools:text="Eliminar historial"/>
+    <ListView
+            android:layout_width="395dp"
+            android:layout_height="258dp" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>
