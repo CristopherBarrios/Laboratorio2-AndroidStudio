@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     fun ventana(view: View) {
         val hola = Intent(this@MainActivity, Main2Activity::class.java)
         startActivity(hola)
+        Toast.makeText(this,"Bienvenido",Toast.LENGTH_LONG).show()
     }
     fun ventana2(view: View) {
         Toast.makeText(this,"Se eliminó el historial",Toast.LENGTH_LONG).show()
