@@ -47,7 +47,6 @@ class Main2Activity : AppCompatActivity(), View.OnClickListener {
     fun onClick3(v: View?) {
         contador = 0
         textView?.setText(Integer.toString(contador))
-        lista.
     }
     fun  onClick4(v: View?) {
         lista.add(Integer.toString(contador))
