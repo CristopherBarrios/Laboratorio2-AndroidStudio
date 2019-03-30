@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Labo2CristopherBarrios</string>
+    <string name="btn1">Nuevo Entreno</string>
+    <string name="btn2">Eliminar historial</string>
+    <string name="btn3">+</string>
+    <string name="btn4">-</string>
+    <string name="btn5">Agregar</string>
+    <string name="btn6">Inicio</string>
+    <string name="txt1">0</string>
+    <string name="txt2">Valores Predeterminados</string>
 </resources>

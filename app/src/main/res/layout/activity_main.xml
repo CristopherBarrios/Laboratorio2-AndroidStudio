@@ -21,12 +21,12 @@
             android:layout_height="wrap_content"
             android:id="@+id/button"
             android:background="@color/colorPrimaryDark"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="ventana"
+            android:text="@string/btn1" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="138dp" android:layout_marginRight="138dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="139dp"
-            android:layout_marginStart="139dp"
-            android:onClick="ventana" android:layout_marginBottom="48dp"
-            app:layout_constraintBottom_toTopOf="@+id/button2" tools:text="Nuevo Entreno"/>
+            android:layout_marginStart="139dp" android:layout_marginBottom="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/button2"/>
     <Button
             android:layout_width="154dp"
             android:layout_height="wrap_content"
@@ -35,7 +35,8 @@
             android:layout_marginEnd="127dp" android:layout_marginRight="127dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="131dp"
             android:layout_marginStart="131dp" android:layout_marginBottom="115dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:onClick="ventana2" tools:text="Eliminar historial"/>
+            app:layout_constraintBottom_toBottomOf="parent" android:onClick="ventana2" tools:text=" "
+            android:text="@string/btn2"/>
     <ListView
             android:layout_width="395dp"
             android:layout_height="258dp" android:layout_marginEnd="8dp"
