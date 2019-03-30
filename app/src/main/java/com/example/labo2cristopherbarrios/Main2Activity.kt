@@ -1,6 +1,6 @@
 package com.example.labo2cristopherbarrios
 
-import android.content.Intent
+
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -23,7 +23,7 @@ class Main2Activity : AppCompatActivity(), View.OnClickListener {
         button3!!.setOnClickListener(this)
         textView = findViewById(R.id.textView) as TextView
         val listView = findViewById<ListView>(R.id.listView)
-        
+
 
         listView.adapter = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,lista)
     }
@@ -47,10 +47,12 @@ class Main2Activity : AppCompatActivity(), View.OnClickListener {
     fun onClick3(v: View?) {
         contador = 0
         textView?.setText(Integer.toString(contador))
+        lista.
     }
     fun  onClick4(v: View?) {
         lista.add(Integer.toString(contador))
         listView.adapter = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,lista)
+        Toast.makeText(this,"Se ha agregado", Toast.LENGTH_LONG).show()
     }
 }
 
